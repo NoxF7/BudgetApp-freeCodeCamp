@@ -9,6 +9,8 @@ class Category:
     ledger = []
     def __init__(self, name):
         self.name = name
+        self.total = 0
+        self.ledger = []
         print(self.name, "constructed")
     def __str__(self):
         title = ""
@@ -55,4 +57,11 @@ class Category:
 
 
 
-# def create_spend_chart(categories):
+def create_spend_chart(categories):
+    numCategories = len(categories)
+    txt = ["Percentage spent by category"]
+    
+    for categorie in categories:
+        percentage = categorie.total/numCategories
+        if percentage 
+    
